@@ -1,0 +1,92 @@
+  <!-- 侧边栏 -->
+    <div class="aside">
+        <!-- 个人资料 -->
+        <div class="profile">
+            <!-- 头像 -->
+            <div class="avatar img-circle">
+                <img src="./img/aaa.png">
+            </div>
+            <h4>高鑫勇</h4>
+        </div>
+        <!-- 导航菜单 -->
+        <div class="navs">
+            <ul class="list-unstyled">
+                <li>
+                    <a ui-sref="menu.chart" class="active">
+                        <i class="fa fa-home"></i>
+                        仪表盘
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="menu.skill">
+                        <i class="fa fa-bell"></i>
+                        职业技能表
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="menu.school">
+                        <i class="fa fa-bell"></i>
+                        教育经历
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="menu.work">
+                        <i class="fa fa-cog"></i>
+                        工作
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="menu.hobby">
+                        <i class="fa fa-cog"></i>
+                        爱好
+                    </a>
+                   
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="main">
+        <div class="container-fluid">
+            <!-- 头部 -->
+            <div class="header">
+                <nav class="navbar navbar-custom">
+                    <div class="navbar-header">
+                        <a href="javascript:;" class="navbar-brand">
+                            <i class="fa fa-navicon"></i>
+                        </a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-bell"></i>
+                                <span class="badge">8</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./settings.html">
+                                <i class="fa fa-user"></i>
+                                  德玛西亚
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-sign-out"></i>
+                                退出
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>          
+            </div>
+            <!-- 个人资料 -->
+            <div class="body teacher-profile">
+            <!-- 只有菜单规则 的子级会显示 在这里，menu, 只menu.xxx对应 的模板会显示 在这里  -->
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>

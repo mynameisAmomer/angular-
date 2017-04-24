@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng版简历</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./lib/index.css">
+</head>
+<body ng-app="myApp">
+  <div ui-view></div>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./lib/angular/angular.js"></script>
+  <script src="./lib/angular-ui-router/angular-ui-router.js"></script>
+
+  <!-- **angular中的js要单独引入才能使用 -->
+  <script src="./js/hobbyCtrl.js"></script>
+  <script src="./js/workCtrl.js"></script>
+  <script src="./js/schoolCtrl.js"></script>
+  <script src="./js/skillCtrl.js"></script>
+  <script src="./js/menuCtrl.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
